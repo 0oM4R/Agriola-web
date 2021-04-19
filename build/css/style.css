@@ -1,0 +1,87 @@
+.launch {
+    width: 100%;
+    height: 300px;
+    ;
+    background-repeat: no-repeat;
+    background-size: 100% 300px;
+    background-image: url(../images/tallgrass.jpg);
+}
+
+.navbarColor {
+    background-color: #4ABB6F;
+}
+
+#barndColor {
+    font-family: Bahnschrift;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn {
+    background-color: #fff;
+}
+
+.nav-link {
+    font-family: Bahnschrift;
+    font-size: 20px;
+    font-weight: medium;
+    color: #ffffff !important;
+}
+
+.current {
+    color: #000 !important;
+    border-bottom: solid 3px black;
+}
+
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.container {
+    padding: 100px;
+}
+
+.btn-outline-dark {
+    border-color: #ffffff;
+    color: #fff;
+}
+
+.btn-outline-dark:hover {
+    background-color: rgba(165, 158, 158, 0.493);
+}
+
+#firstSec img {
+    max-width: 100%;
+    height: 250px;
+    vertical-align: middle;
+}
+
+#firstSec {
+    padding-bottom: 20px;
+}
+
+.dot {
+    font-size: 8px;
+    color: black;
+}
+
+#secSec img {
+    max-width: 100%;
+    height: 250px;
+    vertical-align: middle;
+}
+
+#secSec {
+    padding-bottom: 20px;
+}
+
+#thirdSec {
+    padding-bottom: 20px;
+}
+
+#thirdSec img {
+    max-width: 100%;
+    height: 250px;
+    vertical-align: middle;
+}
