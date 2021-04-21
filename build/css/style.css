@@ -192,3 +192,42 @@
             -ms-border-radius: 50%;
             -o-border-radius: 50%;
         }
+        
+        #footer {
+            background-color: #4ABB6F;
+        }
+        
+        #footer h3 {
+            font-family: Bahnschrift;
+            font-size: 50px;
+            font-weight: bold;
+            color: #0D3A1B;
+        }
+        
+        #footer .col {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        #footer a {
+            font-family: Bahnschrift;
+            font-size: 40px;
+            font-weight: lighter;
+            color: #ffff;
+        }
+        
+        #footer .findUS a {
+            font-size: 30px;
+        }
+        
+        #footer i {
+            font-size: 45px;
+            color: #ffff;
+            align-items: center !important;
+            display: inline;
+        }
+        
+        #footer a:hover {
+            color: #5FA874;
+            text-decoration: none;
+        }
