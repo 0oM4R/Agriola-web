@@ -139,8 +139,12 @@
             font-size: 120px;
             text-align: center;
             background-color: #4abb7050;
-            border-radius: 140px;
+            border-radius: 50%;
             padding: 20px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
         }
         
         .launch {
@@ -166,7 +170,7 @@
         
         .carousel-control-next {
             justify-content: flex-end !important;
-            margin-right: 28px;
+            margin-right: 24px;
         }
         
         #Reviews img {
@@ -184,4 +188,12 @@
             font-size: 55px;
             color: #EBDE2C;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        
+        #Reviews img {
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
         }
