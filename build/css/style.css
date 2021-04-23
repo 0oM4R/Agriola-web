@@ -70,6 +70,7 @@
         #try:hover {
             background-color: #ffffff;
             color: #4ABB6F;
+            text-decoration: none;
         }
         
         .flowContent a {
@@ -228,6 +229,6 @@
         }
         
         #footer a:hover {
-            color: #5FA874;
+            color: #000000;
             text-decoration: none;
         }
