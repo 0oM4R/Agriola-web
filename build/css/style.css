@@ -596,11 +596,11 @@
 }
 
 #generic_price_table .generic_content .generic_price_btn a {
-    /*border-radius: 50px;
+    border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    -webkit-border-radius: 50px;*/
+    -webkit-border-radius: 50px;
     display: inline-block;
     font-family: "Lato", sans-serif;
     font-size: 18px;
