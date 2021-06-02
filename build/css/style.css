@@ -32,20 +32,14 @@
 .current:after {
     content: "";
     display: block;
-    /* This will put the pseudo element on its own line. */
-    /* This will center the border. */
     width: 40px;
-    /* Change this to whatever width you want. */
     padding-top: 5px;
-    /* This creates some space between the element and the border. */
     border-bottom: 2px solid black;
 }
 
 .currentP:after {
     content: "";
     display: block;
-    /* This will put the pseudo element on its own line. */
-    /* This will center the border. */
     width: 47px;
     /* Change this to whatever width you want. */
     padding-top: 5px;
@@ -190,6 +184,13 @@
     font-size: 50px;
     font-weight: bold;
     color: #0D3A1B;
+}
+
+#Reviews p {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    color: #707070;
+    text-align: start;
 }
 
 #Reviews i {
