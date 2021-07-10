@@ -8,9 +8,11 @@
 
 #barndColor {
     font-family: Bahnschrift;
-    font-size: 30px;
+    font-size: 47px;
     font-weight: bold;
     color: #fff;
+    padding: 0;
+    padding-top: 2px;
 }
 
 .btn {
@@ -18,10 +20,17 @@
 }
 
 .nav-link {
-    font-family: Bahnschrift;
-    font-size: 15px;
-    font-weight: medium;
     color: #ffffff !important;
+    margin-right: 15px;
+}
+
+.nav-link h4 {
+    font-family: Bahnschrift;
+    font-size: 24 px;
+    font-weight: medium;
+    padding: 0;
+    margin: 0;
+    padding-left: 5px;
 }
 
 .current,
@@ -32,7 +41,7 @@
 .current:after {
     content: "";
     display: block;
-    width: 40px;
+    width: 75px;
     padding-top: 5px;
     border-bottom: 2px solid black;
 }
@@ -51,8 +60,33 @@
     color: #000 !important;
 }
 
-.container {
-    padding: 100px;
+.Sec1_Container {
+    padding-top: 55px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.embed-responsive {
+    width: 1105px !important;
+    height: 550px !important;
+}
+
+.video {
+    border: splid black 2px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.Sec1_InnerContainer {
+    display: flex;
+    padding-left: 45px;
+    flex-direction: column;
+    justify-content: start;
 }
 
 .btn-outline-dark {
@@ -67,16 +101,40 @@
 #try {
     background-color: #4ABB6F;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 40px;
     font-family: Bahnschrift;
     font-weight: bold;
-    letter-spacing: 4px;
-    padding: 10px 20px;
+    padding: 22px 40px 18px 40px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 #try:hover {
     background-color: #ffffff;
     color: #4ABB6F;
+}
+
+.tree {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 55px;
+    align-items: start;
+}
+
+.flowContent {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.flowContent div {
+    padding: 15px 25px;
 }
 
 .flowContent a {
@@ -179,7 +237,7 @@
     max-width: 90%;
 }
 
-#Reviews h3 {
+.reviws h4 {
     font-family: Bahnschrift;
     font-size: 50px;
     font-weight: bold;
@@ -211,11 +269,12 @@
     background-color: #4ABB6F;
 }
 
-#footer h3 {
+#footer h4 {
     font-family: Bahnschrift;
     font-size: 20px;
     font-weight: bold;
     color: #0D3A1B;
+    margin-bottom: 0;
 }
 
 #footer .col {
