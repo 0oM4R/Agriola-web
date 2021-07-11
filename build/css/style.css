@@ -943,7 +943,7 @@
 }
 
 .steps a {
-    color: #5FA874;
+    color: #4ABB6F;
     text-decoration: none;
     font-weight: bold;
 }
@@ -976,6 +976,9 @@
     max-width: 677px;
 }
 
+
+/* Try detect change */
+
 .Try_detect_detect {
     background-image: url(../images/pic12.png);
     background-color: rgba(87, 79, 79, 0.3);
@@ -983,13 +986,14 @@
     background-repeat: no-repeat;
     padding: 70px;
     display: flex;
+    min-height: 87vh;
 }
 
 .tDetectChange {
     width: 80%;
     margin: auto;
-    height: 100vh;
-    padding-top: 70px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     background-color: #fff;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -998,7 +1002,7 @@
     -o-border-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .tDetectChange h4 {
@@ -1006,31 +1010,81 @@
     font-size: 30px;
     font-weight: normal;
     color: #0D3A1B;
+    margin-bottom: 0px;
+    justify-content: center;
 }
 
-.inputfile {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
+.formUpload {
+    text-align: center;
 }
 
-.inputfile+label {
-    font-size: 1.25em;
-    font-weight: 700;
-    color: white;
-    background-color: black;
-    display: inline-block;
+.inputBorder {
+    border: 2px solid #4ABB6F;
+    width: 750px;
+    display: flex;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    position: relative;
 }
 
-.inputfile:focus+label,
-.inputfile+label:hover {
-    background-color: red;
+.inputBorder h4 {
+    font-family: Bahnschrift;
+    font-size: 25px;
+    font-weight: normal;
+    color: #9E9D9D;
 }
 
-.inputfile+label {
+input#file-input,
+input#file2-input {
+    display: none;
+}
+
+label {
+    margin-bottom: 0px;
     cursor: pointer;
-    /* "hand" cursor */
+}
+
+input#file-input+label :hover {
+    cursor: pointer;
+}
+
+.inputBorder img {
+    position: absolute;
+    right: 20px;
+}
+
+.inputBorder img:hover {
+    opacity: 0.5;
+}
+
+.tDetectChange form .btn-primary {
+    background-color: #4ABB6F !important;
+    padding: 10px 45px;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 26px;
+    font-family: Lato;
+    font-weight: normal;
+    text-transform: capitalize;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: #4ABB6F;
+    margin-left: auto;
+}
+
+.tDetectChange form .btn-primary:hover {
+    border: #0D3A1B !important;
+}
+
+.imgResult {
+    height: 630px;
+    width: 700px;
 }

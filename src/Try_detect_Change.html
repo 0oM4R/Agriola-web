@@ -4,53 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../build/css/style.css">
+
     <link rel="stylesheet" href="../build/css/bootstrap.min.css">
     <link rel="stylesheet" href="../build/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" <link href="../build/webfonts" rel="stylesheet">
+    <link rel="stylesheet" href="../build/css/style.css">
     <title>AGRIOLA</title>
     <link rel="icon" href="../build/images/logoz-removebgb.png">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark  navbarColor">
-        <a class="navbar-brand" href="./index.html" id="barndColor">AGRIOLA <img  src="../build/images/logoz-removebgb.png" width="40" height="40" class=" ml-2 d-inline-block align-baseline" alt="">
-        </a>
-        <button class="navbar-toggler btn btn-outline-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto mr-4">
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="./index.html">
-                        <h4>Home</h4>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="./features.html">
-                        <h4>Features</h4>
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pricing.html">
-                        <h4>Pricing</h4>
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.html">
-                        <h4>About</h4>
-                    </a>
-                </li>
-
-
-            </ul>
-        </div>
-    </nav>
     <div class="Try_detect_detect">
 
         <div class="tDetectChange">
@@ -58,16 +24,114 @@
 
             <div class="formUpload">
                 <form action="#">
+                    <div class="inputBorder">
+                        <input required type="file" id="file-input" name="FirstFile" value="Upload first image">
+                        <h4 id="file1value"></h4>
+                        <span id="file1Name" style=" font-family: Bahnschrift;font-size: 20px;margin-bottom:0px; color: #0D3A1B;padding-top:1px; padding-left: 2px; font-weight: lighter;"></span>
+                        <label for="file-input"> <img src="../build/images/Icon feather-upload.png" alt=""> </label>
+                    </div>
+                    <div class="inputBorder">
 
-                    <input type="file" id="firstFile" name="FirstFile" value="Upload first image" class="inputfile"><br>
-                    <label for="firstFile"></label>
-                    <br>
-                    <label for="lname">Last name:</label>
-                    <br>
-                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                    <input type="submit" value="Submit">
+                        <input required type="file" id="file2-input" name="SecFile" value="Upload first image">
+                        <h4 id="file2value"></h4>
+                        <span id="file2Name" style=" font-family: Bahnschrift;font-size: 20px; color: #0D3A1B;margin-bottom:0px;padding-top:1px; padding-left: 2px; font-weight: lighter;"></span>
+                        <label for="file2-input"> <img src="../build/images/Icon feather-upload.png" alt=""> </label>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Submit">
+
+
                 </form>
+            </div>
+            <div class="wait p-5" id="waitTCDresult">
+                <h4>Please waite</h4>
+                <div class="text-center">
+                    <div class=" spinner-border text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="imgResult mt-5" id="TCDresult">
+                <img id="TCR_img" src="#" alt="" width="100%" height="100%">
             </div>
         </div>
     </div>
+
+
+    <div class="container-fluid " id="footer">
+        <div class="row justify-content-center">
+
+            <div class="col-10 mt-3 mb-1">
+                <div class="row justify-content-center">
+                    <div class="col-auto mr-5  ">
+                        <img src="../build/images/logoz-removebgb.png" width="150px" alt="" class="mr-2">
+                    </div>
+                    <div class="col-3 ml-4">
+                        <div class="row pt-1 ml-3">
+                            <h4>LINKS</h4>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">About</a>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">Services</a>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">Products</a>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="row pt-1 ml-3 ">
+                            <h4>SOCIAL</h4>
+                        </div>
+                        <div class="d-flex  findUS ml-3 ">
+                            <div class=" mt-1  mr-3"><i class="fab fa-facebook"></i></div>
+                            <div class=" mt-1 "><a href=#>Agriola</a></div>
+                        </div>
+                        <div class=" d-flex  findUS ml-3">
+                            <div class=" mt-1  mr-3"><i class="fab fa-twitter"></i>
+                            </div>
+                            <div class=" mt-1 "><a href=#>@Agriola</a></div>
+                        </div>
+                        <div class="d-flex  findUS ml-3">
+                            <div class=" mt-1 mr-3"><i class="fab fa-instagram"></i>
+                            </div>
+                            <div class=" mt-1 "><a href=#>@Agriola</a></div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row pt-1 ml-2">
+                            <h4>FIND US</h4>
+                        </div>
+                        <div class="d-flex align-items-baseline findUS ml-3 ">
+                            <div class="mt-1 mr-3"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class=" mt-1 "><a href=" https://goo.gl/maps/4NZnd5FeosFxU8Ef9 ">Faculty of Engineering Mansoura University</a></div>
+                        </div>
+                        <div class="d-flex a  findUS ml-3 pt-3 pt-2">
+                            <div class="mr-3 mt-1">
+                                <i class=" fas fa-phone-alt "></i>
+                            </div>
+                            <div class=" mt-1 ">
+                                <a href=”tel:+14123815500″>1 (412) 381-5500</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-center pl-5">
+            <h4 style="font-size: 10px;"> <i class=" far fa-copyright mr-2" style="font-size: 10px;"></i>2020-2021 Agriola. All Rights Reseved
+            </h4>
+        </div>
+    </div>
+
+
+
+    <script src="../build/js/jquery-3.5.1.min.js "></script>
+    <script src="../build/js/popper.min.js "></script>
+    <script src="../build/js/bootstrap.min.js "></script>
+    <script src="../build/js/script.js "></script>
 </body>
