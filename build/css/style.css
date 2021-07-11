@@ -172,8 +172,8 @@
 #ourStory p,
 #Sponsors h4 {
     font-family: 'Lato', sans-serif;
-    font-size: 25px;
-    color: #707070;
+    font-size: 35px;
+    color: #000;
     text-align: center;
 }
 
@@ -192,10 +192,28 @@
     color: black;
 }
 
-#Services img {
-    max-width: 100%;
-    height: 300px;
-    vertical-align: left;
+.ourServices {
+    display: flex;
+    flex-direction: row;
+    width: 1085px;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ourServices img {
+    width: 375px;
+    height: 320px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+
+.ourServices div {
+    max-width: 677px;
 }
 
 #Services p {
@@ -203,6 +221,13 @@
     font-size: 20px;
     color: #707070;
     text-align: left;
+}
+
+#Sponsors h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    color: #707070;
+    text-align: center;
 }
 
 #Sponsors i {
@@ -917,6 +942,17 @@
     color: #464343;
 }
 
+.steps a {
+    color: #5FA874;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.steps a:hover {
+    color: #9E9D9D;
+    text-decoration: none;
+}
+
 .featuresContainer {
     display: flex;
     flex-direction: row;
@@ -938,4 +974,63 @@
 
 .featuresContainer div {
     max-width: 677px;
+}
+
+.Try_detect_detect {
+    background-image: url(../images/pic12.png);
+    background-color: rgba(87, 79, 79, 0.3);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px;
+    display: flex;
+}
+
+.tDetectChange {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    padding-top: 70px;
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tDetectChange h4 {
+    font-family: Bahnschrift;
+    font-size: 30px;
+    font-weight: normal;
+    color: #0D3A1B;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile+label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.inputfile:focus+label,
+.inputfile+label:hover {
+    background-color: red;
+}
+
+.inputfile+label {
+    cursor: pointer;
+    /* "hand" cursor */
 }
