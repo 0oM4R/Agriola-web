@@ -310,7 +310,7 @@
 
 #firstSec_A {
     width: 100%;
-    background-image: url(../images/pic1.png);
+    background-image: url(../images/pic4.png);
     background-color: rgba(87, 79, 79, 0.3);
     background-size: cover;
     background-repeat: no-repeat;
@@ -345,8 +345,8 @@
 
 #whyUs h3 {
     font-family: Bahnschrift;
-    font-size: 50px;
-    color: #000;
+    font-size: 60px;
+    color: #4ABB6F;
     text-align: center;
 }
 
@@ -445,13 +445,23 @@
 }
 
 .contact-clean form .btn-primary {
-    background-color: #5FA874 !important;
+    background-color: #4ABB6F !important;
+    padding: 10px 45px;
     margin-top: 15px;
     color: #fff;
+    font-size: 26px;
+    font-family: Lato;
+    font-weight: normal;
+    text-transform: capitalize;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 
 #contactUs {
-    background-image: url(../images/pic1.png);
+    background-image: url(../images/pic5.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
