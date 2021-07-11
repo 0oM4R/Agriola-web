@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../build/css/style.css">
+    <link rel="stylesheet" href="../build/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../build/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" <link href="../build/webfonts" rel="stylesheet">
+    <title>AGRIOLA</title>
+    <link rel="icon" href="../build/images/logoz-removebgb.png">
+</head>
+
+<body>
+    <div class="demoHeader">
+        <h1>How to use the interactive map?</h1>>
+    </div>
+    <div class="demoContainer">
+        <div class="demoSteps">
+            <div class="step">
+                <div class="numStep">
+                    <h2>1</h2>
+                </div>
+                <div class="stepContent">
+                    <h3>Land Degradation Problem</h3>
+                    <p>● User first detect the area of interest(part of the delta) then choose from slider type of analysis (in this case loss analysis), a bar chart will show the losses of vegetation area from 2000 to 2020. </p>
+                    <p>● By using three mentioned bands above the user can see on delta layer that represent the vegetation area(in green color- indicate the areas that did not change- ), the current losses area (in red color),( the gained areas (in blue
+                        color).
+                    </p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="numStep">
+                    <h2>2</h2>
+                </div>
+                <div class="stepContent">
+                    <h3>NDVI Analysis</h3>
+                    <p>● User first detect the area of interest(part of the delta) then choose from slider type of analysis (in this case NDVI analysis), a chart will show the Normalized Difference Vegetation Index from 2000 to 2021.
+                    </p>
+                    <p>By using NDVI band above, This index defines values from -1.0 to 1.0, Calculations of NDVI for a given pixel always result in a number that ranges from minus one (-1) to plus one (+1); however, no green leaves gives a value close to
+                        zero. A zero means no vegetation and close to +1 (0.8 - 0.9) indicates the highest possible density of green leaves.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demoSteps">
+            <div class="step">
+                <div class="numStep">
+                    <h2>3</h2>
+                </div>
+                <div class="stepContent">
+                    <h3>Water Occurrence Change Intensity</h3>
+                    <p>● This provides a measure of how surface water has changed between two epochs: 1984-1999 and 2000-2015.
+                    </p>
+                    <p>
+                        ● The water occurrence layer has two colors: Red/blue indicates a decrease/increase in surface water occurrence between the epochs. .
+                    </p>
+                    <p>
+                        ● We use the defined region of interest to calculate a histogram of the changing intensity for the ROI sampling at a 30m scale.
+                    </p>
+                </div>
+            </div>
+            <div class="step">
+                <div class="numStep">
+                    <h2>4</h2>
+                </div>
+                <div class="stepContent">
+                    <h3>Water Class Transition</h3>
+                    <p>● This layer captures changes between three classes of water occurrence (not water, seasonal water, and permanent water) along with two additional classes for ephemeral water (ephemeral permanent and ephemeral seasonal).
+                    </p>
+                    <p>● For this analysis, a pie chart is made to better summarize the relatives’ size of the water transition classes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demoSteps">
+            <div class="step lastStep">
+                <div class="numStep">
+                    <h2>5</h2>
+                </div>
+                <div class=" stepContent last_stepContent  ">
+                    <h3>Visualizing changing landscapes</h3>
+                    <p>● This animation used data JRC Yearly Water Classification History contains maps of the location and temporal distribution of surface water from 1984 to 2018 and provides statistics on the extent and change of those water surfaces.
+                        These data were generated using 3,865,618 scenes from Landsat 5, 7, and 8 acquired between 16 March 1984 and 31 December 2018. Each pixel was individually classified into water / non-water.
+                    </p>
+                    <p>● We use river dynamics to demonstrate fading and cumulative history animation effects.
+                    </p>
+                    <p>● There are two ways in animation to represent the water surface change:
+                    </p>
+                    <p class="pl-5"><span style="font-weight: bold;"> First:</span> Fading history where a single year’s channel is shown per frame and fade filters accumulate making the earliest pixels more volatile.
+                        <br><span style="font-weight: bold;">Second:</span> Cumulative history animation shows the full river channel history by removing the fade filter image overlay and assigning a distinct color to each year’s river channel. They are
+                        colored according to year by stretching a palette across the range of years.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="demoVid">
+        <h1>You can watch this video and follow steps!</h1>
+        <div class=" embed-responsive embed-responsive-16by9 videoD">
+            <iframe width="1100" class="video embed-responsive-item" src="https://www.youtube.com/embed/lpBLORaLwH8?loop=1"></iframe>
+
+        </div>
+    </div>
+    <div class="moveToVid">
+        <div>
+            <h1><a href="https://agriolainfo.users.earthengine.app/view/agriola">Move to the Map <i style="vertical-align: text-bottom;" class="fas fa-arrow-right"></i></a> </h1>
+        </div>
+    </div>
+    <div class="container-fluid " id="footer">
+        <div class="row justify-content-center">
+
+            <div class="col-10 mt-3 mb-1">
+                <div class="row justify-content-center">
+                    <div class="col-auto mr-5  ">
+                        <img src="../build/images/logoz-removebgb.png" width="150px" alt="" class="mr-2">
+                    </div>
+                    <div class="col-3 ml-4">
+                        <div class="row pt-1 ml-3">
+                            <h4>LINKS</h4>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">About</a>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">Services</a>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">Products</a>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="row pt-1 ml-3 ">
+                            <h4>SOCIAL</h4>
+                        </div>
+                        <div class="d-flex  findUS ml-3 ">
+                            <div class=" mt-1  mr-3"><i class="fab fa-facebook"></i></div>
+                            <div class=" mt-1 "><a href=#>Agriola</a></div>
+                        </div>
+                        <div class=" d-flex  findUS ml-3">
+                            <div class=" mt-1  mr-3"><i class="fab fa-twitter"></i>
+                            </div>
+                            <div class=" mt-1 "><a href=#>@Agriola</a></div>
+                        </div>
+                        <div class="d-flex  findUS ml-3">
+                            <div class=" mt-1 mr-3"><i class="fab fa-instagram"></i>
+                            </div>
+                            <div class=" mt-1 "><a href=#>@Agriola</a></div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row pt-1 ml-2">
+                            <h4>FIND US</h4>
+                        </div>
+                        <div class="d-flex align-items-baseline findUS ml-3 ">
+                            <div class="mt-1 mr-3"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class=" mt-1 "><a href=" https://goo.gl/maps/4NZnd5FeosFxU8Ef9 ">Faculty of Engineering Mansoura University</a></div>
+                        </div>
+                        <div class="d-flex a  findUS ml-3 pt-3 pt-2">
+                            <div class="mr-3 mt-1">
+                                <i class=" fas fa-phone-alt "></i>
+                            </div>
+                            <div class=" mt-1 ">
+                                <a href=”tel:+14123815500″>1 (412) 381-5500</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-center pl-5">
+            <h4 style="font-size: 10px;"> <i class=" far fa-copyright mr-2" style="font-size: 10px;"></i>2020-2021 Agriola. All Rights Reseved
+            </h4>
+        </div>
+    </div>
+    <script src="../build/js/jquery-3.5.1.min.js "></script>
+    <script src="../build/js/popper.min.js "></script>
+    <script src="../build/js/bootstrap.min.js "></script>
+
+</body>
+
+</html>
