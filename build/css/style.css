@@ -104,27 +104,6 @@
             background-color: rgba(165, 158, 158, 0.493);
         }
         
-        #try {
-            background-color: #4ABB6F;
-            color: #ffffff;
-            font-size: 40px;
-            font-family: Bahnschrift;
-            font-weight: bold;
-            padding: 22px 40px 18px 40px;
-            border-radius: 50px;
-            -webkit-border-radius: 50px;
-            -moz-border-radius: 50px;
-            -ms-border-radius: 50px;
-            -o-border-radius: 50px;
-        }
-        
-        #try:hover,
-        #try a:hover {
-            background-color: #ffffff;
-            color: #4ABB6F;
-            text-decoration: none;
-        }
-        
         .tree {
             display: flex;
             flex-direction: row;
@@ -1036,8 +1015,7 @@
             color: #9E9D9D;
         }
         
-        input#file-input,
-        input#file2-input {
+        input#files-input {
             display: none;
         }
         
@@ -1046,7 +1024,7 @@
             cursor: pointer;
         }
         
-        input#file-input+label :hover {
+        input#files-input+label :hover {
             cursor: pointer;
         }
         
@@ -1055,11 +1033,47 @@
             right: 20px;
         }
         
+        .notic {
+            text-align: left;
+            display: flex;
+            padding: 10px;
+            padding-left: 22px;
+            justify-content: start;
+            max-width: max-content;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+        }
+        
+        .fValid {
+            width: auto;
+            font-size: 12px;
+            font-family: Lato;
+            color: #9E9D9D;
+            margin: auto;
+            padding: 1px;
+        }
+        
+        .fNotValid {
+            width: auto;
+            font-size: 12px;
+            font-family: Lato;
+            color: #ff0000;
+            margin: auto;
+            padding: 1px;
+        }
+        
+        .notic i {
+            padding-top: 5px;
+        }
+        
         .inputBorder img:hover {
             opacity: 0.5;
         }
         
-        .tDetectChange form .btn-primary {
+        .tDetectChange form .btn-success {
             background-color: #4ABB6F !important;
             padding: 10px 45px;
             margin-top: 15px;
@@ -1077,8 +1091,9 @@
             margin-left: auto;
         }
         
-        .tDetectChange form .btn-primary:hover {
+        .tDetectChange form .btn-success:hover:not(:disabled) {
             border: #0D3A1B !important;
+            background-color: #29683e !important;
         }
         
         .imgResult {

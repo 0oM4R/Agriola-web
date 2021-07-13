@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../build/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" <link href="../build/webfonts" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="../build/css/style.css">
     <title>AGRIOLA</title>
     <link rel="icon" href="../build/images/logoz-removebgb.png">
@@ -23,24 +24,23 @@
             <h4>Please upload two images to try the service!</h4>
 
             <div class="formUpload">
-                <form action="#">
+                <form action="#" id="TCDform">
                     <div class="inputBorder">
-                        <input required type="file" id="file-input" name="FirstFile" value="Upload first image">
-                        <h4 id="file1value"></h4>
-                        <span id="file1Name" style=" font-family: Bahnschrift;font-size: 20px;margin-bottom:0px; color: #0D3A1B;padding-top:1px; padding-left: 2px; font-weight: lighter;"></span>
-                        <label for="file-input"> <img src="../build/images/Icon feather-upload.png" alt=""> </label>
+                        <input required type="file" id="files-input" name="FirstFile" value="" multiple accept=".jpg , .png">
+                        <h4 id="filesvalue">Upload two images here</h4>
+                        <span id="filesName" style=" font-family: Bahnschrift;font-size: 20px;margin-bottom:0px; color: #0D3A1B;padding-top:1px; padding-left: 2px; font-weight: lighter;"></span>
+                        <label for="files-input"> <img src="../build/images/Icon feather-upload.png" alt=""> </label>
                     </div>
-                    <div class="inputBorder">
 
-                        <input required type="file" id="file2-input" name="SecFile" value="Upload first image">
-                        <h4 id="file2value"></h4>
-                        <span id="file2Name" style=" font-family: Bahnschrift;font-size: 20px; color: #0D3A1B;margin-bottom:0px;padding-top:1px; padding-left: 2px; font-weight: lighter;"></span>
-                        <label for="file2-input"> <img src="../build/images/Icon feather-upload.png" alt=""> </label>
+                    <div class="notic">
+                        <p id="validation" class="fValid"><i class="fas fa-exclamation-circle"></i> You should select two files , the accepted extensions are " .jpg " and " .png " only.</p>
                     </div>
-                    <input type="submit" class="btn btn-primary" value="Submit">
+
+                    <input type="submit" class="btn btn-success" id="btn_submit" value="Submit" disabled>
 
 
                 </form>
+
             </div>
             <div class="wait p-5" id="waitTCDresult">
                 <h4>Please waite</h4>
@@ -52,7 +52,7 @@
             </div>
 
             <div class="imgResult mt-5" id="TCDresult">
-                <img id="TCR_img" src="#" alt="" width="100%" height="100%">
+                <img id="TCD_img" src="#" alt="" width="100%" height="100%">
             </div>
         </div>
     </div>
