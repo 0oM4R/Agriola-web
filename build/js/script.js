@@ -81,7 +81,8 @@ let img = document.getElementById("TCD_img");
 
 function Submit(event) {
     waitDiv.style.display = "block";
-    // setTimeout(console.log("delay"), 2000);
+    img.src = "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+        // setTimeout(console.log("delay"), 2000);
     img.addEventListener('load', (event) => {
             console.log('The logo has been loaded');
         })
@@ -100,7 +101,7 @@ function Submit(event) {
 
 
 function result() {
-    img.src = "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+
     console.log(img.complete);
     // if () {
     // return true;
