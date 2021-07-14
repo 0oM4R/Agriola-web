@@ -82,58 +82,23 @@ let img = document.getElementById("TCD_img");
 function Submit(event) {
     waitDiv.style.display = "block";
     img.src = "https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
-        // setTimeout(console.log("delay"), 2000);
+
     img.addEventListener('load', (event) => {
-            console.log('The logo has been loaded');
-        })
-        //     if (result()) {
-        //         resultDiv.style.display = "block";
-        //         waitDiv.style.display = "none";
-        //     } else {
-        //         console.log("failed");
-        //     }
-        // }
+        console.log('The logo has been loaded');
+        resultDiv.style.display = "block";
+        waitDiv.style.display = "none";
+
+        //clear form 
+        fileName.textContent = "";
+        fileValue.textContent = "Upload two images here";
+
+        //disable button
+        button.disabled = true;
+
+    })
+
 }
 
 
 
 /***********************TCD result************************************** */
-
-
-function result() {
-
-    console.log(img.complete);
-    // if () {
-    // return true;
-
-    // // } else {
-    // return false;
-}
-
-
-
-
-
-/*
-
-
-if (img.complete) {
-    loaded()
-} else {
-    img.addEventListener('load', loaded)
-    img.addEventListener('error', function() {
-        alert('error')
-    })
-}
-*/
-/*
-
-function checkImage(imageSrc, good, bad) {
-    var img = new Image();
-    img.onload = good;
-    img.onerror = bad;
-    img.src = imageSrc;
-}
-
-checkImage("https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png", function() { alert("good"); }, function() { alert("bad"); });
-*/

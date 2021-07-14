@@ -19,6 +19,30 @@
             background-color: #fff;
         }
         
+        #try {
+            background-color: #4ABB6F;
+            /*color: #ffffff;*/
+            font-size: 40px;
+            font-family: Bahnschrift;
+            font-weight: bold;
+            padding: 22px 40px 18px 40px;
+            border-radius: 50px;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+        }
+        
+        #try:hover {
+            background-color: #ffffff;
+            text-decoration: none;
+        }
+        
+        #try:hover a {
+            color: #4ABB6F;
+            text-decoration: none;
+        }
+        
         .nav-link {
             color: #ffffff !important;
             margin-right: 15px;
@@ -66,7 +90,7 @@
             padding-left: 50px;
             display: flex;
             flex-direction: row;
-            justify-content: start;
+            justify-content: center;
         }
         
         .embed-responsive {
@@ -279,6 +303,9 @@
         
         #footer {
             background-color: #4ABB6F;
+            position: relative;
+            bottom: 0px;
+            ;
         }
         
         #footer h4 {
@@ -955,6 +982,10 @@
         }
         /* Try detect change */
         
+        #TCD_body {
+            min-height: 100vh;
+        }
+        
         .Try_detect_detect {
             background-image: url(../images/pic12.png);
             background-color: rgba(87, 79, 79, 0.3);
@@ -1099,6 +1130,19 @@
         .imgResult {
             height: 630px;
             width: 700px;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+        }
+        
+        #TCD_img {
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
         }
         /**************************** Demo***********************************/
         
@@ -1138,6 +1182,7 @@
         
         .demoContainer {
             display: flex;
+            justify-content: center;
             flex-direction: column;
             padding: 45px 50px 0px 45px;
         }
@@ -1205,6 +1250,7 @@
         
         .last_stepContent {
             max-width: 1152px;
+            justify-content: center;
         }
         
         .demoVid {
