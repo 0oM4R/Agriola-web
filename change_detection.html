@@ -1,21 +1,139 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"  href="{%  static  'home/css/style.css' %}">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
+    <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet" type="text/css"/>
+    <title>Agriola</title>
+    <link rel="icon" href="{% static 'img/logoz-removebgb.png'%}">
 </head>
-<body>
-    <form method = "post" enctype="multipart/form-data"> 
-        {% csrf_token %} 
-        {{ form.as_p }} 
-        <input type="file" name="images" multiple/>
-        <button type="submit">Upload</button> 
-    </form> 
-    <img src="data:image/png;base64,{{ image }}"> 
-    <!--<img src={{ image }} /> -->
+
+<body id="TCD_body">
+
+    <div class="Try_detect_detect" style="background: url('/static/img/pic12.png') no-repeat center; background-size: cover;">
+        
+
+       <div class="tDetectChange">
+            <h4>Please upload two images to try the service!</h4>
+
+            <div class="formUpload">
+                <form action="#" method="POST" enctype="multipart/form-data"> 
+                    {% csrf_token %} 
+                    {{ form.as_p }}
+                    <div class="inputBorder" >
+                         
+                        <label for="input1"> <img src="{% static 'img/Icon feather-upload.png' %}" alt=""> </label>
+                        <input required type="file"  id="input1" name="images"  multiple  style="display:none">
+                        <h4 id="file1value">Upload Two Image </h4>
+                        <span id="file1Name" style=" font-family: Bahnschrift;font-size: 20px;margin-bottom:0px; color: #0D3A1B;padding-top:1px; padding-left: 2px; font-weight: lighter;"></span>
+                      
+                    </div>
+                    
+                    
+                    <div class="notic">
+						<p id="validation" class="fValid"><i class="fas fa-exclamation-circle"></i> You should select two files , the accepted extensions are " .jpg " and " .png " only.</p>
+					</div>
+
+                    <input type="submit" class="btn btn-success" value="Submit">
+
+
+                </form>
+            </div>
+           
+        
+        <div class="imgResult mt-5" id="TCDresult">
+            
+                <img id="TCR_img" src="data:image/png;base64,{{ image }}" alt="" width="100%" height="100%">
+            </div> 
+        </div>
+    </div> 
+
+
+    <div class="container-fluid " id="footer">
+        <div class="row justify-content-center">
+
+            <div class="col-10 mt-3 mb-1">
+                <div class="row justify-content-center">
+                    <div class="col-auto mr-5  ">
+                        <img src="{% static 'img/logoz-removebgb.png'%}" width="150px" alt="" class="mr-2">
+                    </div>
+                    <div class="col-3 ml-4">
+                        <div class="row pt-1 ml-3">
+                            <h4>LINKS</h4>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">About</a>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">Services</a>
+                        </div>
+                        <div class="row mt-1 ml-3">
+                            <a href="#">Products</a>
+                        </div>
+
+                    </div>
+                    <div class="col-3">
+                        <div class="row pt-1 ml-3 ">
+                            <h4>SOCIAL</h4>
+                        </div>
+                        <div class="d-flex  findUS ml-3 ">
+                            <div class=" mt-1  mr-3"><i class="fab fa-facebook"></i></div>
+                            <div class=" mt-1 "><a href=#>Agriola</a></div>
+                        </div>
+                        <div class=" d-flex  findUS ml-3">
+                            <div class=" mt-1  mr-3"><i class="fab fa-twitter"></i>
+                            </div>
+                            <div class=" mt-1 "><a href=#>@Agriola</a></div>
+                        </div>
+                        <div class="d-flex  findUS ml-3">
+                            <div class=" mt-1 mr-3"><i class="fab fa-instagram"></i>
+                            </div>
+                            <div class=" mt-1 "><a href=#>@Agriola</a></div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="row pt-1 ml-2">
+                            <h4>FIND US</h4>
+                        </div>
+                        <div class="d-flex align-items-baseline findUS ml-3 ">
+                            <div class="mt-1 mr-3"><i class="fas fa-map-marked-alt"></i></div>
+                            <div class=" mt-1 "><a href=" https://goo.gl/maps/4NZnd5FeosFxU8Ef9 ">Faculty of Engineering Mansoura University</a></div>
+                        </div>
+                        <div class="d-flex a  findUS ml-3 pt-3 pt-2">
+                            <div class="mr-3 mt-1">
+                                <i class=" fas fa-phone-alt "></i>
+                            </div>
+                            <div class=" mt-1 ">
+                                <a href=”tel:+14123815500″>1 (412) 381-5500</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row justify-content-center pl-5">
+            <h4 style="font-size: 10px;"> <i class=" far fa-copyright mr-2" style="font-size: 10px;"></i>2020-2021 Agriola. All Rights Reseved
+            </h4>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="{% static 'home/js/script.js' %} "></script>
+    <script src="{% static 'home/js/popper.min.js' %} "></script>
+
 </body>
-</html>
